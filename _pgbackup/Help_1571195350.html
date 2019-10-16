@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Login.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/61368c7f55.js" crossorigin="anonymous"></script>
+    </head>     
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Belajar Bareng</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#contact"><i class="fas fa-book-open"></i> Pembelajaran</a>
+            <a href="about.html"><i class="fas fa-address-card"></i> Tentang Kami</a>
+            <a href="help.html"><i class="fas fa-question-circle"></i> Bantuan</a>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
+                    </div>
+                    <div class="container">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <a href="#login" class="right" onclick="document.getElementById('id01').style.display='block'" style="background-color: #4caf50; color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="#register" class="right" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user-plus"></i> Daftar</a>
+            <div id="id02" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
+                    </div>
+                    <div class="container">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan Username" name="uname" required>
+                        <label for="email">
+                            <b>Email</b>
+                        </label>
+                        <input type="email" placeholder="Masukkan Email" name="email" required>
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Masukkan Password" name="psw" required>
+                        <h4>
+                            Jenis Kelamin </h4>
+                        <label class="containera" style="font-size: 18px;">Laki-Laki
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containera" style="font-size: 18px;">Perempuan
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <button type="submit">Daftar</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="column" style="width: 60%;">
+                <div class="form" style="margin-left: 80px; margin-right: 40px; margin-bottom: 100px;">
+                    <h1>Hubungi Kami</h1>
+                    <p>Apabila ada pertanyaan seputar Belajar Bareng silahkan isi formulir dibawah ini :</p>
+                    <form action="/action_page.php">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan Email">
+                        <label for="HP">Nomor Handphone</label>
+                        <input type="text" id="HP" name="HP" placeholder="Masukkan Nomor Handphone">
+                        <label for="kategori">Kategori</label>
+                        <select id="kategori" name="kategori">
+                            <option value="kritik">Kritik dan Saran</option>
+                            <option value="keluhan">Keluhan</option>
+                            <option value="lain">Pertanyaan Lain</option>
+                        </select>
+                        <label for="isi">Pesan / Pertanyaan</label>
+                        <textarea id="isi" name="id" style="height: 200px; width: 100%;"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="column" style="width: 35%;">
+                <div class="card" style="margin-top: 115px;">
+                    <div class="containerb">
+                        <h1>Kontak Kami</h1>
+                        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>
+            &copyCopyright Belajar Bersama </h4>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>
