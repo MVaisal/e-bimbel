@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Bareng - Bantuan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/tabeladmin.css">
+    </head>     
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Belajar Bareng</a>
+            <a href="pelajaranadmin.html"><i class="fas fa-book-open"></i> Pembelajaran</a>
+            <a href="useradmin.html"><i class="fas fa-book-open"></i> Pengguna</a>
+            <a href="#logout" class="right" style="background-color: #4caf50; color: white;">Logout <i class="fas fa-sign-out-alt"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+        </div>
+        <div style="margin: 70px 150px;">
+            <h1>Daftar Pengguna</h1>
+            <table class="tabel">
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Nama Depan</th>
+                    <th>Nama Belakang</th>
+                    <th style="width: 300px;">Jenis Kelamin</th>
+                    <th>Foto</th>
+                    <th>Edit/Hapus Pengguna</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MVaisal</td>
+                    <td>22.m.faisal@gmail.com</td>
+                    <td>Muhammad&nbsp;</td>
+                    <td>Faisal</td>
+                    <td>Laki-Laki</td>
+                    <td>
+                        <img class="profil" src="img/male.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                        <button onclick="document.getElementById('id05').style.display='block'" class="buttonb">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>DestryAyu</td>
+                    <td>Destryayu@gmail.com</td>
+                    <td>Destry&nbsp;</td>
+                    <td>Ayu</td>
+                    <td>Perempuan</td>
+                    <td>
+                        <img class="profil" src="img/female.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                        <button onclick="document.getElementById('id05').style.display='block'" class="buttonb">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Santi12</td>
+                    <td>Santiyt@gmailcom</td>
+                    <td>Santi</td>
+                    <td>Santi</td>
+                    <td>Perempuan</td>
+                    <td>
+                        <img class="profil" src="img/facebook-default-no-profile-pic-girl.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                        <button onclick="document.getElementById('id05').style.display='block'" class="buttonb">Edit</button>
+                    </td>
+                </tr>                 
+            </table>
+            <div id="id05" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan Username" name="uname" required>
+                        <label for="nmdep">
+                            <b>Nama Depan</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan Nama Depan" name="nmdep" required>
+                        <label for="nmbel">
+                            <b>Nama Belakang</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan Nama Belakang" name="nmbel" required>
+                        <label for="email">
+                            <b>Email</b>
+                        </label>
+                        <input type="email" placeholder="Masukkan Email" name="email" required>
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Masukkan Password" name="psw" required>
+                        <label for="kel">
+                            <b>Jenis Kelamin</b>
+                        </label>
+                        <select>
+                            <option value="laki">Laki-Laki</option>
+                            <option value="prempuan">Perempuan</option>
+                        </select>
+                        <label for="profil">
+                            <b>Upload Foto Profil</b>
+                        </label>
+                        <input type="file" name="profil">
+                        <button type="submit">Edit</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>
+            Copyright &copy 2019 Belajar Bersama. All Rights Reserved</h4>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/tambahpelajaran.js"></script>
+    </body>
+</html>

@@ -30,6 +30,11 @@
     height: 150px;
 }
 
+.tabel .profil {
+    width: 100px;
+    height: 100px;
+}
+
 .buttonb {
     background-color: #4CAF50;
     color: white;

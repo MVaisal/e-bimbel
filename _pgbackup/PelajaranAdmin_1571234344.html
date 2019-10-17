@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Bareng - Bantuan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/tabeladmin.css">
+    </head>     
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Belajar Bareng</a>
+            <a href="pelajaranadmin.html"><i class="fas fa-book-open"></i> Pembelajaran</a>
+            <a href="useradmin.html"><i class="fas fa-book-open"></i> Pengguna</a>
+            <a href="#logout" class="right" style="background-color: #4caf50; color: white;">Logout <i class="fas fa-sign-out-alt"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+        </div>
+        <div style="margin: 70px 150px;">
+            <h1>Daftar Pelajaran</h1>
+            <table class="tabel">
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Pelajaran</th>
+                    <th>Kategori</th>
+                    <th>Link</th>
+                    <th style="width: 300px;">Thumbnail</th>
+                    <th>Edit/Hapus Pelajaran</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hidrogen</td>
+                    <td>Kimia</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/chemistry-glassware-56a12a083df78cf772680235.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                        <button onclick="document.getElementById('id04').style.display='block'" class="buttonb">Edit
+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Java</td>
+                    <td>Komputer</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/desk.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1 + 1 = 11</td>
+                    <td>Statistik</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/file-20180226-140213-yox11e.jpg"/>
+                    </td>
+                    <td>
+                        <button class="buttonc">Hapus</button>
+                    </td>
+                </tr>                 
+            </table>
+            <button onclick="document.getElementById('id03').style.display='block'" style="width: 150px; position: fixed; bottom: 70px; right: 10%; border: 1px solid green;" class="buttonb">
+                <i class="far fa-plus-square"></i> Tambah
+            </button>
+            <div id="id03" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        <label for="pelajaran">
+                            <b>Nama Pelajaran</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan nama pelajaran" name="pelajaran" required>
+                        <label for="kat">
+                            <b>Kategori</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan kategori" name="kat" required>
+                        <label for="link">
+                            <b>Link</b>
+                            <input type="text" placeholder="Masukkan link pelajaran" name="kat" required>
+                        </label>
+                        <label for="img">
+                            <b>Thumbnail</b>
+                            <input type="file" name="img" required>
+                        </label>
+                        <button type="submit">Tambah</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div id="id04" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        <label for="pelajaran">
+                            <b>Nama Pelajaran</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan nama pelajaran" name="pelajaran" required>
+                        <label for="kat">
+                            <b>Kategori</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan kategori" name="kat" required>
+                        <label for="link">
+                            <b>Link</b>
+                            <input type="text" placeholder="Masukkan link pelajaran" name="kat" required>
+                        </label>
+                        <label for="img">
+                            <b>Thumbnail</b>
+                            <input type="text" placeholder="Masukkan foto thumbnail" name="img" required>
+                        </label>
+                        <button type="submit">Edit</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>
+            Copyright &copy 2019 Belajar Bersama. All Rights Reserved</h4>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/tambahpelajaran.js"></script>
+        <script src="js/editpelajaran.js"></script>
+    </body>
+</html>

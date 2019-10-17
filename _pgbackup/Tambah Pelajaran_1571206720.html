@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Bareng - Bantuan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Login.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/pelajaran.css">
+    </head>     
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Belajar Bareng</a>
+            <a href="#contact"><i class="fas fa-book-open"></i> Pembelajaran</a>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
+                    </div>
+                    <div class="container">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <a href="#login" class="right" onclick="document.getElementById('id01').style.display='block'" style="background-color: #4caf50; color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+        </div>
+        <div style="margin: 70px 150px;">
+            <h1>Daftar Pelajaran</h1>
+            <table class="pelajaran">
+                <tr>
+                    <th>Nama Pelajaran</th>
+                    <th>Kategori</th>
+                    <th>Link</th>
+                    <th style="width: 300px;">Thumbnail</th>
+                </tr>
+                <tr>
+                    <td>Hidrogen</td>
+                    <td>Kimia</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="http://pinegrow.com/placeholders/img11.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Komputer</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/desk.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 + 1 = 11</td>
+                    <td>Statistik</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/file-20180226-140213-yox11e.jpg"/>
+                    </td>
+                </tr>                 
+            </table>
+            <div class="pg-empty-placeholder"></div>
+        </div>
+        <div class="footer">
+            <h4>
+            &copyCopyright Belajar Bersama </h4>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

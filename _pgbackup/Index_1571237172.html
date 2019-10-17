@@ -17,7 +17,7 @@
             <a href="about.html"><i class="fas fa-address-card"></i> Tentang Kami</a>
             <a href="help.html"><i class="fas fa-question-circle"></i> Bantuan</a>
             <div class="a">
-                <a href="#register" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user-plus"></i> Daftar</a>
+                <a href="#register" class="" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user-plus"></i> Daftar</a>
                 <div id="id02" class="modal">
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="imgcontainer">
@@ -29,14 +29,6 @@
                                 <b>Username</b>
                             </label>
                             <input type="text" placeholder="Masukkan Username" name="uname" required>
-                            <label for="nmdep">
-                                <b>Nama Depan</b>
-                            </label>
-                            <input type="text" placeholder="Masukkan Nama Depan" name="nmdep" required>
-                            <label for="nmbel">
-                                <b>Nama Belakang</b>
-                            </label>
-                            <input type="text" placeholder="Masukkan Nama Belakang" name="nmbel" required>
                             <label for="email">
                                 <b>Email</b>
                             </label>
@@ -45,21 +37,16 @@
                                 <b>Password</b>
                             </label>
                             <input type="password" placeholder="Masukkan Password" name="psw" required>
-                            <label for="kel">
-                                <h4>Jenis Kelamin</h4>
-                            </label>
+                            <h4>
+                            Jenis Kelamin </h4>
                             <label class="containera" style="font-size: 18px;">Laki-Laki
-                                <input type="radio" checked="checked" name="kel">
+                                <input type="radio" checked="checked" name="radio">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="containera" style="font-size: 18px;">Perempuan
-                                <input type="radio" name="kel">
+                                <input type="radio" name="radio">
                                 <span class="checkmark"></span>
                             </label>
-                            <label for="profil">
-                                <b>Upload Foto Profil</b>
-                            </label>
-                            <input type="file" name="profil">
                             <button type="submit">Daftar</button>
                         </div>
                         <div class="container" style="background-color:#f1f1f1">

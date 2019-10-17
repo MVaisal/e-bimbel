@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Belajar Bareng - Bantuan</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/Login.css">
+        <link rel="stylesheet" href="css/popup.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
         <link rel="stylesheet" href="css/all.css">
@@ -16,68 +16,83 @@
             <a href="#contact"><i class="fas fa-book-open"></i> Pembelajaran</a>
             <a href="about.html"><i class="fas fa-address-card"></i> Tentang Kami</a>
             <a href="help.html"><i class="fas fa-question-circle"></i> Bantuan</a>
-            <div id="id01" class="modal">
-                <form class="modal-content animate" action="/action_page.php" method="post">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
-                    </div>
-                    <div class="container">
-                        <label for="uname">
-                            <b>Username</b>
-                        </label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-                        <label for="psw">
-                            <b>Password</b>
-                        </label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit">Login</button>
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                    </div>
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                </form>
-            </div>
-            <a href="#login" class="right" onclick="document.getElementById('id01').style.display='block'" style="background-color: #4caf50; color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
-            <a href="#register" class="right" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user-plus"></i> Daftar</a>
-            <div id="id02" class="modal">
-                <form class="modal-content animate" action="/action_page.php" method="post">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
-                    </div>
-                    <div class="container">
-                        <label for="uname">
-                            <b>Username</b>
-                        </label>
-                        <input type="text" placeholder="Masukkan Username" name="uname" required>
-                        <label for="email">
-                            <b>Email</b>
-                        </label>
-                        <input type="email" placeholder="Masukkan Email" name="email" required>
-                        <label for="psw">
-                            <b>Password</b>
-                        </label>
-                        <input type="password" placeholder="Masukkan Password" name="psw" required>
-                        <h4>
-                            Jenis Kelamin </h4>
-                        <label class="containera" style="font-size: 18px;">Laki-Laki
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="containera" style="font-size: 18px;">Perempuan
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <button type="submit">Daftar</button>
-                    </div>
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                </form>
+            <div class="a">
+                <a href="#register" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user-plus"></i> Daftar</a>
+                <div id="id02" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
+                        </div>
+                        <div class="container">
+                            <label for="uname">
+                                <b>Username</b>
+                            </label>
+                            <input type="text" placeholder="Masukkan Username" name="uname" required>
+                            <label for="nmdep">
+                                <b>Nama Depan</b>
+                            </label>
+                            <input type="text" placeholder="Masukkan Nama Depan" name="nmdep" required>
+                            <label for="nmbel">
+                                <b>Nama Belakang</b>
+                            </label>
+                            <input type="text" placeholder="Masukkan Nama Belakang" name="nmbel" required>
+                            <label for="email">
+                                <b>Email</b>
+                            </label>
+                            <input type="email" placeholder="Masukkan Email" name="email" required>
+                            <label for="psw">
+                                <b>Password</b>
+                            </label>
+                            <input type="password" placeholder="Masukkan Password" name="psw" required>
+                            <label for="kel">
+                                <h4>Jenis Kelamin</h4>
+                            </label>
+                            <label class="containera" style="font-size: 18px;">Laki-Laki
+                                <input type="radio" checked="checked" name="kel">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="containera" style="font-size: 18px;">Perempuan
+                                <input type="radio" name="kel">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="profil">
+                                <b>Upload Foto Profil</b>
+                            </label>
+                            <input type="file" name="profil">
+                            <button type="submit">Daftar</button>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <a href="#login" class="" onclick="document.getElementById('id01').style.display='block'" style="background-color: #4caf50; color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img alt="Avatar" class="avatar" src="img/facebook-default-no-profile-pic1.jpg">
+                        </div>
+                        <div class="container">
+                            <label for="uname">
+                                <b>Username</b>
+                            </label>
+                            <input type="text" placeholder="Masukkan Username" name="uname" required>
+                            <label for="psw">
+                                <b>Password</b>
+                            </label>
+                            <input type="password" placeholder="Masukkan Password" name="psw" required>
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
         </div>
@@ -116,7 +131,7 @@
         </div>
         <div class="footer">
             <h4>
-            &copyCopyright Belajar Bersama </h4>
+            Copyright &copy 2019 Belajar Bersama. All Rights Reserved</h4>
         </div>
         <script src="js/navbar.js"></script>
         <script src="js/login.js"></script>

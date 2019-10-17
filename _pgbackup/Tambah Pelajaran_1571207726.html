@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Bareng - Bantuan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/pelajaran.css">
+    </head>     
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Belajar Bareng</a>
+            <a href="#contact"><i class="fas fa-book-open"></i> Pembelajaran</a>
+            <a href="#logout" class="right" style="background-color: #4caf50; color: white;"><i class="fas fa-sign-in-alt"></i> Logout</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+        </div>
+        <div style="margin: 70px 150px;">
+            <h1>Daftar Pelajaran</h1>
+            <table class="pelajaran">
+                <tr>
+                    <th>Nama Pelajaran</th>
+                    <th>Kategori</th>
+                    <th>Link</th>
+                    <th style="width: 300px;">Thumbnail</th>
+                </tr>
+                <tr>
+                    <td>Hidrogen</td>
+                    <td>Kimia</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="http://pinegrow.com/placeholders/img11.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Komputer</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/desk.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 + 1 = 11</td>
+                    <td>Statistik</td>
+                    <td>Youtube.com/asdas</td>
+                    <td>
+                        <img src="img/file-20180226-140213-yox11e.jpg"/>
+                    </td>
+                </tr>                 
+            </table>
+            <button class="button" onclick="document.getElementById('id03').style.display='block'" style="width: 100px; position: fixed; bottom: 70px; right: 250px;">Tambah</button>
+            <div id="id03" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        <label for="pelajaran">
+                            <b>Nama Pelajaran</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan nama pelajaran" name="pelajaran" required>
+                        <label for="kat">
+                            <b>Kategori</b>
+                        </label>
+                        <input type="text" placeholder="Masukkan kategori" name="kat" required>
+                        <label for="link">
+                            <b>Link</b>
+                            <input type="text" placeholder="Masukkan link pelajaran" name="kat" required>
+                        </label>
+                        <label for="img">
+                            <b>Thumbnail</b>
+                            <input type="text" placeholder="Masukkan foto thumbnail" name="img" required>
+                        </label>
+                        <button type="submit">Tambah</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <button class="button" style="width: 100px; position: fixed; bottom: 70px; right: 150px; background: red;">Hapus</button>
+        </div>
+        <div class="footer">
+            <h4>
+            &copyCopyright Belajar Bersama </h4>
+        </div>
+        <script src="js/navbar.js"></script>
+        <script src="js/tambahpelajaran.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

@@ -39,6 +39,10 @@ body {
     font-family: Aclonica;
 }
 
+.topnav a.right {
+    float: right;
+}
+
 .topnav .icon {
     display: none;
 }
@@ -144,11 +148,12 @@ html {
     box-sizing: border-box;
 }
 
-/**,
+*,
 *:before,
 *:after {
     box-sizing: inherit;
-}*/
+}
+
 .column {
     float: left;
     width: 33.3%;
