@@ -2,10 +2,9 @@
 <html> 
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Belajar Bareng - Bantuan</title>
+        <title>Belajar Bareng - Tentang Kami</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/popup.css">
-        <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
         <link rel="stylesheet" href="css/all.css">
     </head>     
@@ -63,7 +62,7 @@
                             <button type="submit">Daftar</button>
                         </div>
                         <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -95,36 +94,34 @@
                 </div>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
-        </div>
-        <div class="row" style="margin-top: 50px;">
-            <div class="column" style="width: 60%;">
-                <div class="form" style="margin-left: 80px; margin-right: 40px; margin-bottom: 100px;">
-                    <h1>Hubungi Kami</h1>
-                    <p>Apabila ada pertanyaan seputar Belajar Bareng silahkan isi formulir dibawah ini :</p>
-                    <form action="/action_page.php">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Masukkan Email">
-                        <label for="HP">Nomor Handphone</label>
-                        <input type="text" id="HP" name="HP" placeholder="Masukkan Nomor Handphone">
-                        <label for="kategori">Kategori</label>
-                        <select id="kategori" name="kategori">
-                            <option value="kritik">Kritik dan Saran</option>
-                            <option value="keluhan">Keluhan</option>
-                            <option value="lain">Pertanyaan Lain</option>
-                        </select>
-                        <label for="isi">Pesan / Pertanyaan</label>
-                        <textarea id="isi" name="id" style="height: 200px; width: 100%;"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
+        </div>         
+        <div style="margin: 100px 80px;">
+            <h1>Team</h1>
+            <hr style="border-style: solid; border-width: 2px; border-color: #c4c4c4;"/>
+            <h2 style="text-align: center; color: #c4c4c4;">Kelompok 3</h2>
+            <div class="row">
+                <div class="column" style="width: 45%;">
+                    <div class="card">
+                        <img alt="faisal" style="width: 100%; border-radius: 50;" src="img/male.jpg">
+                        <div class="containerb">
+                            <h2>Muhammad Faisal</h2>
+                            <p class="title">162410101093</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>22.m.faisal@gmail.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="column" style="width: 35%;">
-                <div class="card" style="margin-top: 115px;">
-                    <div class="containerb">
-                        <h1>Kontak Kami</h1>
-                        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                <div class="column" style="float: right; width: 45%;">
+                    <div class="card">
+                        <img alt="ayu" style="width: 100%;" src="img/female.jpg">
+                        <div class="containerb">
+                            <h2>Destry Ayu</h2>
+                            <p class="title">162410101037</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>example@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,6 +131,7 @@
             Copyright &copy 2019 Belajar Bersama. All Rights Reserved</h4>
         </div>
         <script src="js/navbar.js"></script>
-        <script src="js/popup.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/register.js"></script>
     </body>
 </html>
