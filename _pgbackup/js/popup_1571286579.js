@@ -23,9 +23,9 @@ window.onclick = function(event) {
 }
 
 function validateForm() {
-  var x = document.forms["modal-content animate"]["uname"]["nmdep"]["email"]["nmbel"]["psw"].value;
+  var x = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("Silahkan diisi dengan lengkap");
+    alert("Name must be filled out");
     return false;
   }
 }

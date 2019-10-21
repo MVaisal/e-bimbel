@@ -144,11 +144,12 @@ html {
     box-sizing: border-box;
 }
 
-/**,
+*,
 *:before,
 *:after {
     box-sizing: inherit;
-}*/
+}
+
 .column {
     float: left;
     width: 33.3%;
@@ -204,4 +205,17 @@ h1 {
 h2 {
     font-size: 25px;
 }
+
+.page {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 650px) {
+    .page {
+        width: 100%;
+        margin: 0px;
+        display: block;
+    }
 }
