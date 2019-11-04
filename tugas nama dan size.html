@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title>File Validation-1</title> 
+</head> 
+
+<body> 
+    <p> 
+        <input type="file" id="file" onchange="Filevalidation()" /> 
+    </p>
+    <p id="size"></p>
+    <p id="namex"></p>
+</body> 
+
+<script> 
+    Filevalidation = () => { 
+        const fi = document.getElementById('file');
+        if (fi.files.length > 0) { 
+            for (const i = 0; i <= fi.files.length - 1; i++) {
+                const fsize = fi.files.item(i).size; 
+                const file = Math.round((fsize / 1024));
+                document.getElementById('size').innerHTML = '<b>' + file + '</b> KB'; 
+                }
+            }
+        }
+                var input = document.getElementById( 'file' );
+                var infoArea = document.getElementById( 'namex' );
+                input.addEventListener( 'change', showFileName );
+                function showFileName( event ) {
+                    var input = event.srcElement;
+                    var fileName = input.files[0].name;
+                    infoArea.textContent = 'File name: ' + fileName;
+                    }
+</script> 
+
+</html> 
